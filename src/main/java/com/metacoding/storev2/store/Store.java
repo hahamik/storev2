@@ -1,9 +1,11 @@
 package com.metacoding.storev2.store;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Table(name = "store_tb")
@@ -16,4 +18,8 @@ public class Store {
     private String name;
     private Integer stock;
     private Integer price;
+
+    public void 재고감소(int qty) {
+        this.stock = this.stock - qty;
+    }
 }

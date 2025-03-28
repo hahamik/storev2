@@ -1,4 +1,4 @@
-package com.metacoding.storev2.order;
+package com.metacoding.storev2.user.order;
 
 import jakarta.persistence.*;
 import lombok.Getter;
